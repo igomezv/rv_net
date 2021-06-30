@@ -4,7 +4,7 @@ from __future__ import print_function
 
 import tensorflow as tf
 
-from astronet.ops import training
+from ops import training
 
 def create_learning_rate(hparams, global_step):
   """Creates a learning rate Tensor.
