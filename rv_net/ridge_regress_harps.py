@@ -58,4 +58,4 @@ def ridge_regress_harps(TRAIN_FILE_NAME_LIST, VAL_FILE_NAME_LIST, alpha, verbose
   all_mean_val_labels = [item for sublist in all_mean_val_labels for item in sublist]
   all_mean_val_bjds = [item for sublist in all_mean_val_bjds for item in sublist]
   
-  return all_mean_val_preds, all_mean_val_labels, all_mean_val_bjds, avg_list
+  return all_mean_val_preds, all_mean_val_labels, all_mean_val_bjds, avg_list, alpha
