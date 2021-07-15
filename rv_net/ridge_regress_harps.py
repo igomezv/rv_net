@@ -16,6 +16,7 @@ def ridge_regress_harps(TRAIN_FILE_NAME_LIST, VAL_FILE_NAME_LIST, alpha, verbose
   all_mean_val_bjds = []
   all_mean_val_labels = []
   all_mean_val_bjds = []
+  avg_list = []
 
   for index in range(0, len(VAL_FILE_NAME_LIST)):
     TRAIN_FILE_NAME = TRAIN_FILE_NAME_LIST[index]
@@ -48,6 +49,7 @@ def ridge_regress_harps(TRAIN_FILE_NAME_LIST, VAL_FILE_NAME_LIST, alpha, verbose
     all_mean_val_labels.append(mean_val_labels.tolist())
     all_mean_val_bjds.append(mean_val_bjds.tolist())
   avg = np.mean(rms_avg_list)
+  avg_list.append(avg)
   print("________________________")
   print("average rms = "+str(avg)+" m/s")
 
@@ -56,4 +58,4 @@ def ridge_regress_harps(TRAIN_FILE_NAME_LIST, VAL_FILE_NAME_LIST, alpha, verbose
   all_mean_val_labels = [item for sublist in all_mean_val_labels for item in sublist]
   all_mean_val_bjds = [item for sublist in all_mean_val_bjds for item in sublist]
   
-  return all_mean_val_preds, all_mean_val_labels, all_mean_val_bjds, avg
+  return all_mean_val_preds, all_mean_val_labels, all_mean_val_bjds, avg_list
