@@ -2,6 +2,7 @@
 from tf_util import config_util
 from tf_util import configdict
 from rv_net import data_HARPS_N
+import tensorflow as tf
 
 def load_dataset_ridge(filename):
   dataset_hparams = configdict.ConfigDict(dict(
