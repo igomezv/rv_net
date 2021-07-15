@@ -1,6 +1,7 @@
 import numpy as np
 from sklearn.linear_model import Ridge
-from load_dataset_ridge import load_dataset_ridge
+from rv_net import load_dataset_ridge
+import tensorflow as tf
 
 def ridge_regress_harps(TRAIN_FILE_NAME_LIST, VAL_FILE_NAME_LIST, alpha, verbose):
   rms_avg_list = []
@@ -19,7 +20,7 @@ def ridge_regress_harps(TRAIN_FILE_NAME_LIST, VAL_FILE_NAME_LIST, alpha, verbose
   for index in range(0, len(VAL_FILE_NAME_LIST)):
     TRAIN_FILE_NAME = TRAIN_FILE_NAME_LIST[index]
     VAL_FILE_NAME = VAL_FILE_NAME_LIST[index]
-    train_X, train_Y, train_bjd  = load_dataset_ridge(TRAIN_FILE_NAME)
+    train_X, train_Y, train_bjd  = load_dataset_ridge.load_dataset_ridge(TRAIN_FILE_NAME)
     val_X, val_Y, val_bjd = load_dataset_ridge(VAL_FILE_NAME)
 
     pred_run_val = []

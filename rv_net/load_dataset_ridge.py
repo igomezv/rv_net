@@ -1,7 +1,7 @@
 
 from tf_util import config_util
 from tf_util import configdict
-from data_HARPS_N import data_HARPS_N
+from rv_net import data_HARPS_N
 
 def load_dataset_ridge(filename):
   dataset_hparams = configdict.ConfigDict(dict(
