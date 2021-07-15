@@ -1,10 +1,12 @@
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
 import numpy as np
 from sklearn.linear_model import Ridge
 from rv_net import load_dataset_ridge
-#import tensorflow as tf
+import tensorflow as tf
 
 def ridge_regress_harps(TRAIN_FILE_NAME_LIST, VAL_FILE_NAME_LIST, alpha, verbose):
-  import tensorflow as tf
   rms_avg_list = []
   weight_decay_list_t = []
   gaussian_noise_list_t = []
