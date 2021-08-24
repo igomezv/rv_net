@@ -8,7 +8,7 @@ import numpy as np
 
 def load_dataset_ridge(filename):
   dataset_hparams = configdict.ConfigDict(dict(
-    ccf_feature_name="Rescaled CCF_residuals", #CCF_residuals
+    ccf_feature_name="Rescaled CCF_residuals_cutoff", #CCF_residuals
     label_feature_name= "activity signal",#"RV",
     label_feature_name2= "BJD",
     batch_size=300,
