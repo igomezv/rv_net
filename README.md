@@ -7,3 +7,10 @@
 <code> conda env create -f tensorflow_env.yml </code>
 3. Run the <code>2_3_1_HARPS_Linear_FC_CNN_June10_2023.ipynb</code>  script
 
+
+## Modifications for making .yml files to work on Other computers
+1. Create the .yml file without builds
+   <code>conda env export --no-builds > my_environment.yml</code>
+2. In addition, this may not work on Windows devices. There does not seem to be an easy way to automatically remove OS-specific packages, but there is a way to see which packages were specifically installed using <code>conda install</code> so we could use that to remove all other packages from the .yml file.
+   <code>conda env export --from-history</code>
+
