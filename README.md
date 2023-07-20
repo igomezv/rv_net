@@ -14,3 +14,9 @@
 2. In addition, this may not work on Windows devices. There does not seem to be an easy way to automatically remove OS-specific packages, but there is a way to see which packages were specifically installed using <code>conda install</code> so we could use that to remove all other packages from the .yml file.
    <code>conda env export --from-history</code>
 
+
+## Other important things
+Allocation: <code> sched_mit_andrewv </code>
+directory: <code> /nfs/mkilab001/Groups/Andrew_Vanderburg </code>
+
+
