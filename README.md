@@ -18,5 +18,6 @@
 ## Other important things
 Allocation: <code> sched_mit_andrewv </code>
 directory: <code> /nfs/mkilab001/Groups/Andrew_Vanderburg </code>
+loading anaconda <code> module load anaconda3/2021.11 </code>
 
 
