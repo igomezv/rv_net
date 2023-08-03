@@ -17,7 +17,11 @@
 
 ## Other important things
 Allocation: <code> sched_mit_andrewv </code>
+
 directory: <code> /nfs/mkilab001/Groups/Andrew_Vanderburg </code>
+
 loading anaconda <code> module load anaconda3/2021.11 </code>
+
+extracting a ton of tar.gz files into one directory (directory_name) <code> cat *.tar | tar -xvf - -i -C directory_name </code>
 
 
