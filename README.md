@@ -1,6 +1,6 @@
-igomezv: Step 2 works with 
+igomezv: Instead Step 2, also works the following: 
 
-	conda create -n rv_net_debeurs numpy=1.21.5 matplotlib=3.5.3 scikit-learn pandas=1.3.5 h5py=3.7.0 hdf5=1.10.6 astropy=4.3.1 keras=2.10.0 keras-preprocessing=1.1.2 tensorflow=2.10.0 tqdm ipywidgets
+<code> conda create -n rv_net_debeurs numpy=1.21.5 matplotlib=3.5.3 scikit-learn pandas=1.3.5 h5py=3.7.0 hdf5=1.10.6 astropy=4.3.1 keras=2.10.0 keras-preprocessing=1.1.2 tensorflow=2.10.0 tqdm ipywidgets </code>
 
 and installing with pip tensorflow_addons
 
